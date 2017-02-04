@@ -1,0 +1,531 @@
+#+TITLE: List of GNU/Linux packages
+#+AUTHOR: karlkorp
+#+EMAIL: lispgod@gmail.com
+
+#+LANGUAGE: en
+#+STARTUP: indent content
+#+PROPERTY: header-args :exports code :tangle install.sh
+
+* System
+** [[https://www.midnight-commander.org/][Midnight Commander]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install mc
+#+END_SRC
+
+** [[http://invisible-island.net/xterm/][XTerm]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install xterm
+#+END_SRC
+
+** [[https://hisham.hm/htop/][htop]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install htop
+#+END_SRC
+
+** aptitude and synaptic
+#+BEGIN_SRC sh
+  sudo apt-get -y install aptitude
+  sudo apt-get -y install synaptic
+#+END_SRC
+
+** build-essential
+#+BEGIN_SRC sh
+  sudo apt-get -y install build-essential
+#+END_SRC
+
+** GNU sed, GNU Awk, GNU Grep
+#+BEGIN_SRC sh
+  sudo apt-get -y install sed
+  sudo apt-get -y install gawk
+  sudo apt-get -y install grep
+#+END_SRC
+
+** [[https://www.gnu.org/software/coreutils/coreutils.html][Coreutils]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install coreutils
+#+END_SRC
+
+** [[http://gparted.org/][GParted]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gparted
+#+END_SRC
+
+** [[https://www.gnupg.org/][GnuPG]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gnupg
+#+END_SRC
+
+** [[https://www.bleachbit.org/][BleachBit]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install bleachbit
+#+END_SRC
+
+** Fonts
+#+BEGIN_SRC sh
+  sudo apt-get -y install fonts-dejavu
+  sudo apt-get -y install fonts-liberation
+#+END_SRC
+
+** File archivers
+#+BEGIN_SRC sh
+  sudo apt-get -y install rar
+  sudo apt-get -y install tar
+  sudo apt-get -y install zip
+  sudo apt-get -y install unzip
+  sudo apt-get -y install unrar
+  sudo apt-get -y install p7zip
+  sudo apt-get -y install p7zip-rar
+  sudo apt-get -y install p7zip-full
+  sudo apt-get -y install file-roller
+#+END_SRC
+
+** [[https://www.virtualbox.org/][VirtualBox]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install virtualbox-qt
+  sudo apt-get -y install virtualbox-dkms
+  sudo apt-get -y install virtualbox-ext-pack
+  sudo apt-get -y install virtualbox-guest-additions-iso
+#+END_SRC
+
+** fdupes
+#+BEGIN_SRC sh
+  sudo apt-get -y install fdupes
+#+END_SRC
+
+* Computer programming
+** [[https://git-scm.com/][Git]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install git-core
+#+END_SRC
+
+** [[https://www.python.org/][Python]]
+*** Interperter and documentation
+#+BEGIN_SRC sh
+  sudo apt-get -y install python3
+  sudo apt-get -y install python3-doc
+#+END_SRC
+
+*** [[http://ipython.org/notebook.html][IPython Notebook]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install ipython3-notebook
+#+END_SRC
+
+*** [[http://www.scipy.org/][SciPy]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install python3-scipy
+#+END_SRC
+
+*** [[http://www.numpy.org/][NumPy]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install python3-numpy
+#+END_SRC
+
+*** [[http://matplotlib.org/][matplotlib]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install python3-matplotlib
+#+END_SRC
+
+*** Other Python Modules and Packages
+#+BEGIN_SRC sh
+  sudo apt-get -y install python3-tk
+  sudo apt-get -y install python3-pip
+  sudo apt-get -y install python3-cffi
+  sudo apt-get -y install python3-opengl
+#+END_SRC
+
+** [[https://www.perl.org/][Perl]]
+*** Interpreter, documentation and modules
+#+BEGIN_SRC sh
+  sudo apt-get -y install perl
+  sudo apt-get -y install perl-doc
+  sudo apt-get -y install perl-modules
+#+END_SRC
+
+** [[http://openjdk.java.net/][Java]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install default-jre
+  sudo apt-get -y install default-jdk
+#+END_SRC
+
+** [[https://racket-lang.org/][Racket]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install racket
+  sudo apt-get -y install racket-doc
+#+END_SRC
+
+** [[http://www.sbcl.org/][SBCL]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install sbcl
+  sudo apt-get -y install sbcl-doc
+  sudo apt-get -y install sbcl-source
+#+END_SRC
+
+** C/C++, Fortran, Assembler
+*** [[https://www.gnu.org/software/make/][GNU Make]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install make
+#+END_SRC
+
+*** [[http://www.scons.org/][SCons]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install scons
+#+END_SRC
+
+*** [[https://cmake.org/][CMake]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install cmake
+  sudo apt-get -y install cmake-curses-gui
+#+END_SRC
+
+*** [[https://gcc.gnu.org/][GCC]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gcc
+#+END_SRC
+
+**** [[https://www.gnu.org/software/gdb/][GDB]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gdb
+#+END_SRC
+
+**** g++
+#+BEGIN_SRC sh
+  sudo apt-get -y install g++
+#+END_SRC
+
+**** gfortran
+#+BEGIN_SRC sh
+  sudo apt-get -y install gfortran
+#+END_SRC
+
+**** [[https://www.gnu.org/software/binutils/][GNU Binary Utilities]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install binutils
+#+END_SRC
+
+*** [[http://llvm.org/][LLVM]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install llvm
+#+END_SRC
+
+**** [[http://clang.llvm.org/][Clang]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install clang
+#+END_SRC
+
+*** [[https://www.gnu.org/software/gsl/][GNU Scientific Library]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libgsl-dev
+#+END_SRC
+
+*** C++ libraries
+**** [[http://www.boost.org/][Boost]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libboost-all-dev
+#+END_SRC
+
+**** [[http://www.mpich.org/][MPICH]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install mpich
+  sudo apt-get -y install libmpich-dev
+#+END_SRC
+
+**** [[https://www.open-mpi.org/][Open MPI]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libopenmpi-dev
+#+END_SRC
+
+**** [[https://www.gnu.org/software/bison/][GNU Bison and Flex]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install flex
+  sudo apt-get -y install bison
+#+END_SRC
+
+**** [[http://opencv.org/][OpenCV]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libopencv-dev
+#+END_SRC
+
+**** [[http://www.swig.org/][SWIG]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install swig
+#+END_SRC
+
+**** [[http://eigen.tuxfamily.org/index.php?title=Main_Page][Eigen]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libeigen3-dev
+#+END_SRC
+
+**** [[http://arma.sourceforge.net/][Armadillo]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libarmadillo-dev
+#+END_SRC
+
+**** [[http://pqxx.org/][libpqxx]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libpqxx-dev
+#+END_SRC
+
+*** [[http://www.netlib.org/lapack/][LAPACK]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install liblapacke-dev
+#+END_SRC
+
+*** [[http://www.openblas.net/][OpenBLAS]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libopenblas-dev
+#+END_SRC
+
+** IDE's and Text editors
+*** [[https://www.gnu.org/software/emacs/][GNU Emacs]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install emacs24
+  sudo apt-get -y install org-mode
+  sudo apt-get -y install emacs24-el
+  sudo apt-get -y install emacs-goodies-el
+#+END_SRC
+
+*** [[http://www.vim.org/][Vim]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install vim
+  sudo apt-get -y install vim-nox
+  sudo apt-get -y install vim-gtk
+  sudo apt-get -y install vim-doc
+#+END_SRC
+
+*** [[http://www.codeblocks.org/][Code::Blocks]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install codeblocks
+  sudo apt-get -y install codeblocks-contrib
+#+END_SRC
+
+*** [[http://www.freepascal.org/][FPC]] and [[http://www.lazarus-ide.org/][Lazarus]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install lcl
+  sudo apt-get -y install fpc
+  sudo apt-get -y install lazarus
+  sudo apt-get -y install fp-utils
+  sudo apt-get -y install fpc-source
+#+END_SRC
+
+** Databases
+*** [[http://www.postgresql.org/][PostgreSQL]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install postgresql
+#+END_SRC
+
+* Scientific packages
+** [[https://imagej.nih.gov/ij/][ImageJ]]
+#+BEGIN_SRC sh
+  # WARNING!
+  # The problem is that the /usr/bin/imagej script detects JAVA_HOME using
+  # JAVA_HOME=$(/usr/sbin/update-java-alternatives -l | grep openjdk | sort | tail -1 | cut -d' ' -f 3)
+  # which is empty as the output of update-java-alternatives -l is (note multiple spaces between columns):
+  # java-1.6.0-openjdk-amd64 1061 /usr/lib/jvm/java-1.6.0-openjdk-amd64
+  # java-1.7.0-openjdk-amd64 1071 /usr/lib/jvm/java-1.7.0-openjdk-amd64
+  # java-1.8.0-openjdk-amd64 1081 /usr/lib/jvm/java-1.8.0-openjdk-amd64
+  # and cut -d' ' -f3 selects space.
+  # The solution is to squeeze multiple spaces before running cut, so the line should read:
+  # JAVA_HOME=$(/usr/sbin/update-java-alternatives -l | grep openjdk | sort | tail -1 | tr -s ' ' | cut -d' ' -f 3)
+  # which then gives the correct output and makes imagej run as expected.
+  sudo apt-get -y install imagej
+#+END_SRC
+
+** [[http://gwyddion.net/][Gwyddion]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gwyddion
+  sudo apt-get -y install gwyddion-plugins
+#+END_SRC
+
+** [[http://www.scilab.org/][Scilab]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install scilab
+  sudo apt-get -y install scilab-doc
+#+END_SRC
+
+** [[http://www.gnuplot.info/][Gnuplot]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gnuplot
+#+END_SRC
+
+** [[http://maxima.sourceforge.net/index.html][Maxima]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install maxima
+  sudo apt-get -y install xmaxima
+  sudo apt-get -y install wxmaxima
+#+END_SRC
+
+** [[https://www.gnu.org/software/octave/][GNU Octave]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install octave
+  sudo apt-get -y install octave-doc
+  sudo apt-get -y install octave-info
+  sudo apt-get -y install liboctave-dev
+  sudo apt-get -y install octave-htmldoc
+#+END_SRC
+
+** [[https://qalculate.github.io/][Qalculate]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install qalculate
+#+END_SRC
+
+** CAD
+*** [[http://www.freecadweb.org/][FreeCAD]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install freecad
+#+END_SRC
+
+* Office
+** [[https://www.libreoffice.org/][LibreOffice]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libreoffice
+  sudo apt-get -y install libreoffice-style-sifr
+#+END_SRC
+
+** [[http://www.latex-project.org/][LaTeX]]
+*** [[https://www.tug.org/texlive/][TeX Live]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install texlive
+  sudo apt-get -y install latex-beamer
+  sudo apt-get -y install texlive-lang-english
+  sudo apt-get -y install texlive-lang-cyrillic
+#+END_SRC
+
+*** [[https://www.gnu.org/software/auctex/][AUCTeX]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install auctex
+#+END_SRC
+
+* Audio and Video
+** [[https://ffmpeg.org/][FFmpeg]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install ffmpeg
+#+END_SRC
+
+** [[https://obsproject.com/][Open Broadcaster Software]]
+#+BEGIN_SRC sh
+  sudo add-apt-repository -y ppa:obsproject/obs-studio
+  sudo apt-get update
+  sudo apt-get -y install obs-studio
+#+END_SRC
+
+** [[http://moc.daper.net/][MOC]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install moc
+#+END_SRC
+
+** [[http://www.audacityteam.org/][Audacity]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install audacity
+#+END_SRC
+
+** [[https://wiki.gnome.org/Apps/EasyTAG][EasyTAG]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install easytag
+#+END_SRC
+
+** [[http://soundconverter.org/][SoundConverter]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install soundconverter
+#+END_SRC
+
+** [[http://www.videolan.org/vlc/][VLC media player]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install vlc
+  sudo apt-get -y install vlc-nox
+#+END_SRC
+
+* Graphics
+** [[https://www.blender.org/][Blender]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install blender
+#+END_SRC
+
+** [[https://inkscape.org/en/][Inkscape]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install inkscape
+#+END_SRC
+
+** [[https://www.scribus.net/][Scribus]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install scribus
+  sudo apt-get -y install scribus-doc
+#+END_SRC
+
+*** [[http://www.ghostscript.com/][Ghostscript]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install ghostscript
+#+END_SRC
+
+** [[https://www.gimp.org/][GIMP]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install gimp
+#+END_SRC
+
+** [[http://www.imagemagick.org/script/index.php][ImageMagick]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install imagemagick
+#+END_SRC
+
+* Internet
+** [[http://www.openssh.com/][OpenSSH]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install ssh
+#+END_SRC
+
+** [[http://www.gnutls.org/][GnuTLS]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install libgnutls-dev
+#+END_SRC
+
+** [[https://nmap.org/][Nmap]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install nmap
+#+END_SRC
+
+** [[http://www.openwall.com/john/][John the Ripper]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install john
+#+END_SRC
+
+** [[https://curl.haxx.se/][cURL]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install curl
+#+END_SRC
+
+** [[http://www.gnu.org/software/wget/][GNU Wget]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install wget
+#+END_SRC
+
+** [[https://filezilla-project.org/][FileZilla]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install filezilla
+#+END_SRC
+
+** [[http://ugetdm.com/][uGet]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install uget
+#+END_SRC
+
+** [[http://www.remmina.org/wp/][Remmina]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install remmina
+  sudo apt-get -y install remmina-plugin-rdp
+  sudo apt-get -y install remmina-plugin-vnc
+#+END_SRC
+
+** [[https://www.transmissionbt.com/][Transmission]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install transmission
+  sudo apt-get -y install transmission-cli
+  sudo apt-get -y install transmission-gtk
+#+END_SRC
+
+* Games
+** [[https://www.openttd.org/en/][OpenTTD]]
+#+BEGIN_SRC sh
+  sudo apt-get -y install openttd
+  sudo apt-get -y install openttd-opengfx
+  sudo apt-get -y install openttd-openmsx
+  sudo apt-get -y install openttd-opensfx
+#+END_SRC
